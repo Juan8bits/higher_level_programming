@@ -12,7 +12,6 @@ Read or watch:
 
 ---
 ## Learning Objectives:bulb:
-What you should learn from this project:
 
 * Why Python programming is awesome
 * Who created Python
@@ -28,15 +27,15 @@ What you should learn from this project:
 ---
 
 ### [0. Run Python file](./0-run)
-* Write a Shell script that runs a Python script.
+* Shell script that runs a Python script.
 
 
 ### [1. Run inline](./1-run_inline)
-* Write a Shell script that runs Python code.
+* Shell script that runs Python code.
 
 
 ### [2. Hello, print](./2-print.py)
-* Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+* Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
 
 ### [3. Print integer](./3-print_number.py)
@@ -48,23 +47,23 @@ What you should learn from this project:
 
 
 ### [5. Print string](./5-print_string.py)
-* Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+* Complete a source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
 
 
 ### [6. Play with strings](./6-concat.py)
-* Complete this source code to print Welcome to Holberton School!
+* Complete a source code to print Welcome to Holberton School!
 
 
 ### [7. Copy - Cut - Paste](./7-edges.py)
-* Complete this source code
+* Complete a source code
 
 
 ### [8. Create a new sentence](./8-concat_edges.py)
-* Complete this source code to print object-oriented programming with Python, followed by a new line.
+* Complete a source code to print object-oriented programming with Python, followed by a new line.
 
 
 ### [9. Easter Egg](./9-easter_egg.py)
-* Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+* Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 
 
 ### [10. Linked list cycle](./10-check_cycle.c)
