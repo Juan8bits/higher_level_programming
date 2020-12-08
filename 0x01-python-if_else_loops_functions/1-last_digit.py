@@ -10,6 +10,6 @@ if last == 0:
     print('Last digit of {:d} is {:d} and is 0'.format(number, last))
 elif last < 6:
     print('Last digit of {:d} is {:d} and is less than'
-          '6 and not 0'.format(number, last))
+          ' 6 and not 0'.format(number, last))
 else:
     print('Last digit of {:d} is {:d} and greater than 5'.format(number, last))
