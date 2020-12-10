@@ -15,15 +15,19 @@ listint_t *insert_node(listint_t **head, int number)
 
 	copyhead = *head;
 	prenode = *head;
+	if (!head)
+		return (NULL);
 /* Creation of new node */
 	new = malloc(sizeof(listint_t));
 	if (!new)
 		return (NULL);
 	new->n = number;
 	new->next = NULL;
-
-	if (copyhead == NULL)
-		copyhead = new;
+	if (copyhead == NULL || copyhead->n >= new->n)
+	{
+		new->next = copyhead;
+		*head = new;
+	}
 	else
 	{
 /* Search position to new node */
