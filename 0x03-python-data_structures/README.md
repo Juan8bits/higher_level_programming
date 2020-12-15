@@ -78,7 +78,7 @@ What you should learn from this project:
 
 
 ### [13. Linked list palindrome](./13-is_palindrome.c)
-* Technical interview preparation exercise. 
+* Technical interview preparation (exercise). 
 
 ---
 ## Author
