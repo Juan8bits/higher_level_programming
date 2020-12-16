@@ -1,20 +1,9 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    tpla_values = []
-    cont1 = 0
-    cont2 = 2
-    for num in tuple_a:
-        if cont1 > 1:
-            break
-        tpla_values.append(num)
-        cont1 += 1
-
-    for num in tuple_b:
-        if cont2 > 3:
-            break
-        tpla_values.append(num)
-        cont2 += 1
-    while len(tpla_values) <= 3:
-        tpla_values.append(0)
-    print(len(tpla_values))
-    return (tpla_values[0] + tpla_values[2], tpla_values[1] + tpla_values[3])
+    tup_a = list(tuple_a)
+    tup_b = list(tuple_b)
+    while len(tup_a) < 2:
+        tup_a.append(0)
+    while len(tup_b) < 2:
+        tup_b.append(0)
+    return (tup_a[0] + tup_b[0], tup_a[1] + tup_b[1])
