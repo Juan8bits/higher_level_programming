@@ -14,6 +14,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
             break
         tpla_values.append(num)
         cont2 += 1
-    while len(tpla_values) <= 4:
+    while len(tpla_values) <= 3:
         tpla_values.append(0)
+    print(len(tpla_values))
     return (tpla_values[0] + tpla_values[2], tpla_values[1] + tpla_values[3])
