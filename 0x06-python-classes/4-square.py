@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+"""Module that create a class called square."""
+
+
 class Square:
     """Class to manipulate a square.
 
     Attributes:
         area (obj): Method for calculate area from a square.
         size: Setter and getter.
-
     """
 
     def __init__(self, size=0):
@@ -13,7 +15,6 @@ class Square:
 
         Args:
             size (int): Size of defined square.
-
         """
 
         if type(size) is not int:

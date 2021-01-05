@@ -1,10 +1,14 @@
 #!/usr/bin/python3
+"""Module that create a class called square."""
+
+
 class Square:
     """Class to manipulate a square.
 
     Attributes:
         area: Method for calculate area from a square.
         size: Setter and getter.
+        position: Setter and getter.    
         my_print: Method for print square.
     """
 

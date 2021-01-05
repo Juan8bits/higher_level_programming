@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module that create a class called square."""
+
+
 class Square:
     """Class to manipulate a square.
 
@@ -11,8 +14,10 @@ class Square:
     def __init__(self, size=0):
         """Initialized method class with a size value.
 
-        Args:
+        Fields:
             size (int): Size of defined square.
+        Methods:
+            __size (int): Privated method of field size.
         """
 
         if type(size) is not int:
