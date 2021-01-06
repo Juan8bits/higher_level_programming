@@ -22,14 +22,8 @@ class Square:
             __size (int): Privated method of field size.
             __position (int tuple): Privated methods of field position.
         """
-
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-        elif size < 0:
-            raise ValueError('size must be >= 0')
-        else:
-            self.__size = size
-            self.position = position
+        self.size = size
+        self.position = position
 
     @property
     def position(self):
