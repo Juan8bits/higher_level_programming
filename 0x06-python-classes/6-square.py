@@ -8,7 +8,7 @@ class Square:
     Attributes:
         area: Method for calculate area from a square.
         size: Setter and getter.
-        position: Setter and getter.    
+        position: Setter and getter.
         my_print: Method for print square.
     """
 
@@ -105,6 +105,6 @@ class Square:
             for i in range(self.__size):
                 for spaces in range(self.__position[0]):
                     print(' ', end="")
-                for i in range(self.__size):
+                for j in range(self.__size):
                     print('#', end="")
                 print()
