@@ -91,11 +91,11 @@ class Square:
         """Method to print a square.
         """
 
-        for spaces in range(self.__position[1]):
-            print()
         if self.__size is 0:
             print()
         else:
+            for spaces in range(self.__position[1]):
+                print()
             for i in range(self.__size):
                 for spaces in range(self.__position[0]):
                     print(' ', end="")
