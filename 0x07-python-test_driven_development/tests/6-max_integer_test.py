@@ -19,9 +19,13 @@ class TestMaxInteger(unittest.TestCase):
             Empty list.
         """
 
+        self.assertEqual(max_integer([1, 5, 7, 4]), 7)
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
         self.assertEqual(max_integer([0, 0, 0]), 0)
         self.assertEqual(max_integer([-5.0, -50, 0]), 0)
+        self.assertEqual(max_integer([0.93, 0.92, 0.09]), 0.93)
+        self.assertEqual(max_integer([1]), 1)
+        self.assertEqual(max_integer(), None)
         self.assertEqual(max_integer([]), None)
 
 if __name__ == '__main__':
