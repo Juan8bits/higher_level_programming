@@ -1,0 +1,62 @@
+================================
+Test 5-text_indentation
+================================
+
+Test for a function that prints
+a square with the character #.
+================================
+
+Import the function:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+--------------------------------
+Test for Succes Cases:
+--------------------------------
+
+    Simple string
+
+    >>> text_indentation("Hi, im IronMan")
+    Hi, im IronMan
+
+    String with tokens
+
+    >>> text_indentation("Hi. how are you? fine: well.")
+    Hi.
+    <BLANKLINE>
+    how are you?
+    <BLANKLINE>
+    fine:
+    <BLANKLINE>
+    well.
+    <BLANKLINE>
+
+    String with two tokens together
+
+    >>> text_indentation("    Test.. He  llow: Im Julien")
+    Test.
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    He  llow:
+    <BLANKLINE>
+    Im Julien
+
+---------------------------------
+Test for error Cases:
+---------------------------------
+    
+    Not str given.
+
+    >>> text_indentation(69)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    
+---------------------------------
+Pep8 style:
+---------------------------------
+
+    >>> import os
+    >>> os.popen("pep8 0-add_integer.py").read()
+    ''

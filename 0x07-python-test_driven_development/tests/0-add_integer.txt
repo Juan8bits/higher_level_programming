@@ -1,0 +1,59 @@
+==============================
+Test 0-add_integer function
+==============================
+
+Test for a function that add.
+==============================
+
+Import the function:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+-------------------------------
+Test for Success Cases:
+-------------------------------
+    Positive Numbers.
+
+    >>> add_integer(10, 7)
+    17
+
+    Negative Numbers.
+
+    >>> add_integer(-8, -2)
+    -10
+
+    Positive and negative float.
+
+    >>> add_integer(100.5, -5)
+    95
+
+------------------------------
+Test for error Cases:
+------------------------------
+
+    String in a argument.    
+
+    >>> add_integer("Hello", 2)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    String in b argument.
+
+    >>> add_integer(2,"Hello")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+    String in both.
+
+    >>> add_integer("Lunchtime","1")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+--------------------------------
+Pep8 style:
+--------------------------------
+
+    >>> import os
+    >>> os.popen("pep8 0-add_integer.py").read()
+    ''
+

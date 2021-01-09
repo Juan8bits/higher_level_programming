@@ -1,0 +1,86 @@
+===============================
+Test 2-matrix_divided
+================================
+
+Test for a function that divides
+all elements of a matrix.
+================================
+
+Import the function:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+--------------------------------
+Test for Succes Cases:
+--------------------------------
+    Matrix with integer numbers.
+
+    >>> matrix = [[5, 6, 0], [10, -20, 5.1]]
+    >>> print(matrix_divided(matrix, 2))
+    [[2.5, 3.0, 0.0], [5.0, 10.0, 2.55]]
+    >>> print(matrix)
+    [[5, 6, 0], [10, 20, 5.1]]
+
+    Empty Matrix.
+
+    >>> matrix = [[]]
+    >>> print(matrix_divided(matrix, 2))
+    [[]]
+
+---------------------------------
+Test for error Cases:
+---------------------------------
+
+    Matrix is not a list.
+
+    >>> matrix = {'id': 241, 'name': 'Juan'}
+    >>> print(matrix_divided(matrix, 5))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    Matrix is not a list of list.
+
+    >>> matrix = [[1, 2.68], "Breakfast", 1]
+    >>> print(matrix_divided(matrix, 8.1))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    Argument "div" = None.
+
+    >>> matrix = [[1], [0]]
+    >>> print(matrix_divided(matrix, None))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    Argument "div" = 0.
+
+    >>> print(matrix_divided(matrix, 0))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    Argument matrix = None.
+
+    >>> print(matrix_divided(None, 0))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    Arguments matrix and div = None.
+
+    >>> print(matrix_divided(None, None))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    Argument matrix with matrix without the same size of rows.
+
+    >>> matrix = [[1, 2],[2, 3],[4]]
+    >>> print(matrix_divided(matrix, 1))
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+---------------------------------
+Pep8 style:
+---------------------------------
+
+    >>> import os
+    >>> os.popen("pep8 0-add_integer.py").read()
+    ''
