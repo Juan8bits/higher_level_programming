@@ -56,5 +56,5 @@ Pep8 style:
 ---------------------------------
 
     >>> import os
-    >>> os.popen("pep8 0-add_integer.py").read()
+    >>> os.popen("pep8 4-print_square.py").read()
     ''

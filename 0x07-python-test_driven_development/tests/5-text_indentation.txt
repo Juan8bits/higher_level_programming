@@ -19,6 +19,10 @@ Test for Succes Cases:
     >>> text_indentation("Hi, im IronMan")
     Hi, im IronMan
 
+    >>> text_indentation("Juan.")
+    Juan.
+    <BLANKLINE>
+
     String with tokens
 
     >>> text_indentation("Hi. how are you? fine: well.")
@@ -42,6 +46,12 @@ Test for Succes Cases:
     <BLANKLINE>
     Im Julien
 
+    >>> text_indentation("Hello\n\nMs.")
+    Hello
+    <BLANKLINE>
+    Ms.
+    <BLANKLINE>
+
 ---------------------------------
 Test for error Cases:
 ---------------------------------
@@ -58,5 +68,5 @@ Pep8 style:
 ---------------------------------
 
     >>> import os
-    >>> os.popen("pep8 0-add_integer.py").read()
+    >>> os.popen("pep8 5-text_indentation.py").read()
     ''

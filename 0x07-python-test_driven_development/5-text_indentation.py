@@ -8,14 +8,14 @@ def text_indentation(text):
     """function that prints a text with 2 new lines after
        special characters (.,?,:).
     """
-    
+
     if type(text) is not (str):
         raise TypeError('text must be a string')
     char = 0
     status = False
     while text[char] == ' ':
-            char += 1    
-    
+        char += 1
+
     while char < len(text):
 
         if text[char - 1] in ('.', '?', ':') and char > 0:
@@ -30,6 +30,6 @@ def text_indentation(text):
                 status = False
         else:
             print("{}".format(text[char]), end='')
-        char +=1
-    if text[char - 1] in ('.', '?', ':') and char > 0: 
-        print('\n') 
+        char += 1
+    if text[char - 1] in ('.', '?', ':') and char > 0:
+        print('\n')

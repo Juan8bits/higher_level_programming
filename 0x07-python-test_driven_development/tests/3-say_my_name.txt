@@ -14,8 +14,14 @@ Import the function:
 Test for Succes Cases:
 --------------------------------
 
-    >>> say_my_name("Soren")
-    Soren
+    >>> say_my_name("Albert")
+    My name is Albert 
+
+    >>> say_my_name("", "Ramirez")
+    My name is  Ramirez
+
+    >>> say_my_name("", "")
+    My name is  
 
 ---------------------------------
 Test for error Cases:
@@ -56,5 +62,5 @@ Pep8 style:
 --------------------------------
 
     >>> import os
-    >>> os.popen("pep8 0-add_integer.py").read()
+    >>> os.popen("pep8 3-say_my_name.py").read()
     ''

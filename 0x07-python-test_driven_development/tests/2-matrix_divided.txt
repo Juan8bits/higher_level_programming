@@ -17,9 +17,9 @@ Test for Succes Cases:
 
     >>> matrix = [[5, 6, 0], [10, -20, 5.1]]
     >>> print(matrix_divided(matrix, 2))
-    [[2.5, 3.0, 0.0], [5.0, 10.0, 2.55]]
+    [[2.5, 3.0, 0.0], [5.0, -10.0, 2.55]]
     >>> print(matrix)
-    [[5, 6, 0], [10, 20, 5.1]]
+    [[5, 6, 0], [10, -20, 5.1]]
 
     Empty Matrix.
 
@@ -82,5 +82,5 @@ Pep8 style:
 ---------------------------------
 
     >>> import os
-    >>> os.popen("pep8 0-add_integer.py").read()
+    >>> os.popen("pep8 2-matrix_divided.py").read()
     ''
