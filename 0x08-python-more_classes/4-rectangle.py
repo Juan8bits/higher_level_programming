@@ -89,7 +89,8 @@ class Rectangle:
         if 0 in [self.__width, self.__height]:
             return ""
         else:
-            return (('#' * self.__width + '\n') * self.__height)
+            ret = (('#' * self.__width + '\n') * self.__height)
+            return ret[:-1]
 
     def __repr__(self):
         """Formal representation of the object Rectange."""
