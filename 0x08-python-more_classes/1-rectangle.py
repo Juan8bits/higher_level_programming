@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-""" This module define a rectangle. """
+"""This module define a rectangle."""
 
 
 class Rectangle:
-    """Class to manipulate a rectangle.
-    """
+    """Class to manipulate a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """ Initialized method class with height and width value.
+        """Initialized method class with height and width value.
 
         Fields:
             __width (int): width for defined rectangle.
@@ -52,7 +51,7 @@ class Rectangle:
             Value of heigth.
         """
 
-        return self.__hight
+        return self.__height
 
     @height.setter
     def height(self, value):
