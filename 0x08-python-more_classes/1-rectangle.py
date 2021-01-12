@@ -16,6 +16,7 @@ class Rectangle:
             width: Setter and getter the private field __width.
             heigth: Setter and getter the private field __height.
         """
+
         self.width = width
         self.height = height
 
@@ -26,6 +27,7 @@ class Rectangle:
         Returns:
             Value of heigth.
         """
+
         return self.__width
 
     @width.setter
@@ -35,6 +37,7 @@ class Rectangle:
         Args:
             value (int): New size of width
         """
+
         if type(value) is not int:
             raise TypeError('width must be an integer')
         if value < 0:
@@ -48,6 +51,7 @@ class Rectangle:
         Returns:
             Value of heigth.
         """
+
         return self.__hight
 
     @height.setter
