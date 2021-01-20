@@ -1,0 +1,45 @@
+=====================================
+Test 1-my_list Class
+=====================================
+
+Test for a function that sorted list.
+=====================================
+
+Import the Class and method:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+-------------------------------
+Test Cases:
+-------------------------------
+
+    >>> l = MyList()
+    >>> l.append(1)
+    >>> l.append(3)
+    >>> l.append(4)
+    >>> l.append(5)
+    >>> l.append(2)
+    >>> print(l)
+    [1, 3, 4, 5, 2]
+    >>> l.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(l)
+    [1, 3, 4, 5, 2]
+
+    >>> l.print_sorted() == 1
+    [1, 2, 3, 4, 5]
+    False
+
+    >>> j = MyList()
+    >>> print(j)
+    []
+    >>> j.print_sorted()
+    []
+
+    >>> j.append(2)
+    >>> j.append(2)
+    >>> j.append(1)
+    >>> print(j)
+    [2, 2, 1]
+    >>> j.print_sorted()
+    [1, 2, 2]
