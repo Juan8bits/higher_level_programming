@@ -43,3 +43,11 @@ Test Cases:
     [2, 2, 1]
     >>> j.print_sorted()
     [1, 2, 2]
+
+--------------------
+PEP8 STYLE
+--------------------
+
+    >>> import os
+    >>> os.popen("pep8 1-my_list.py").read()
+    ''

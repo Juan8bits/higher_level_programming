@@ -18,7 +18,7 @@ Test Cases:
 
     >>> a.integer_validator("", 22)
 
-    >>> a.integer_validator("Break", 89)
+    >>> a.integer_validator("Break", 90)
 
     >>> a.integer_validator("Volkswagen", "Golf gti")
     Traceback (most recent call last):
@@ -27,10 +27,6 @@ Test Cases:
     >>> a.integer_validator("", "Juanma")
     Traceback (most recent call last):
     TypeError:  must be an integer
-
-    >>> a.integer_validator("twelve", 12.8)
-    Traceback (most recent call last):
-    TypeError: twelve must be an integer
 
     >>> a.integer_validator("age", 0)
     Traceback (most recent call last):
@@ -47,3 +43,11 @@ Test Cases:
     >>> a.integer_validator()
     Traceback (most recent call last):
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+--------------------
+PEP8 STYLE
+--------------------
+
+    >>> import os
+    >>> os.popen("pep8 7-base_geometry.py").read()
+    ''
