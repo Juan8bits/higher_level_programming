@@ -8,11 +8,10 @@ def pascal_triangle(n):
     """Pascal_triangle function"""
     if n <= 0:
         return []
-    pascal = [[1], [1, 1]]
-    for i in range(1, n - 1):
-        line = [1]
-        for j in range(len(pascal[i]) - 1):
-            line.extend([pascal[i][j] + pascal[i][j + 1]])
-        line += [1]
-        pascal.append(line)
+    trow = [1]
+    pascal = []
+    y = [0]
+    for x in range(n):
+        pascal.append(trow)
+        trow = [left + right for left, right in zip(trow + y, y + trow)]
     return pascal
