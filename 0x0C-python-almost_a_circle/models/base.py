@@ -25,7 +25,7 @@ class Base:
         """Static method that returns the JSON string representation
            of list_dictionaries.
         """
-        if list_dictionaries is None or list_dictionaries is []:
+        if list_dictionaries is None or list_dictionaries == []:
             return []
         return json.dumps(list_dictionaries)
 
@@ -34,11 +34,13 @@ class Base:
         """Class method that writes the JSON string representation
            of list_objs to a file.
         """
-        if list_objs and len(list_objs) > 0:
-            list_convert = [list_.to_dictionary() for list_ in list_objs]
-            json_list = cls.to_json_string(list_convert)
-            filename = cls.__name__ + ".json"
-            with open(filename, mode="w") as _file:
+        filename = cls.__name__ + ".json"
+        with open(filename, mode="w") as _file:
+            if list_objs is None:
+                _file.write("[]")
+            else:
+                list_convert = [list_.to_dictionary() for list_ in list_objs]
+                json_list = cls.to_json_string(list_convert)
                 _file.write(json_list)
 
     @staticmethod
