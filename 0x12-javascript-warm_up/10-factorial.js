@@ -7,7 +7,7 @@ function factorial (Value, Step) {
 }
 
 let num = parseInt(process.argv[2]);
-if (isNaN(num)) {
+if (isNaN(num) || num === 0) {
   num = 1;
 }
 console.log(factorial(num, num));
