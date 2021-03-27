@@ -18,4 +18,3 @@ if __name__ == 'main':
     obj = session.query(State).filter(State.id == 2).first()
     obj.name = "New Mexico"
     session.commit()
-    session.close()
