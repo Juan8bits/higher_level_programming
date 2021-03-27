@@ -14,7 +14,7 @@ if __name__ == '__main__':
     db = MySQLdb.connect(host="localhost", port=3306, user=user,
                          passwd=passwd, db=d_b)
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER \
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER \
                     BY id ASC;")
     for row in cursor.fetchall():
         print(row)
