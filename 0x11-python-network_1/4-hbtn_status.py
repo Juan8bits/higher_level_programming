@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-""" Script that fetches https://intranet.hbtn.io/status the msg method.
+""" Script that fetches https://intranet.hbtn.io/status msg method
+    with requests package.
 """
-from urllib import request
+import requests
 
 if __name__ == "__main__":
 
-    with request.urlopen('https://intranet.hbtn.io/status') as response:
-        print('Body response:')
-        print('\t- type: {}'.format(type(response.msg)))
-        print('\t- content: {}'.format(response.msg))
+    response = requests.get('https://intranet.hbtn.io/status')
+    print('Body response:')
+    print('\t- type: {}'.format(type(response.text)))
+    print('\t- content: {}'.format(response.text))
