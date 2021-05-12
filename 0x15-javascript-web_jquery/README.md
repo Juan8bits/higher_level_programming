@@ -32,8 +32,5 @@ What you should learn from this project:
 * How to listen/bind to DOM events
 * How to listen/bind to user events
 
----
----
-
 ## Author
 * **Juan Manuel Ramirez Saa** - [Juan8bits](https://github.com/Juan8bits)
